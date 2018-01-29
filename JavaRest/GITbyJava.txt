@@ -1,0 +1,182 @@
+Gamer@HOME MINGW64 ~
+$ cd c:\kcasi
+
+Gamer@HOME MINGW64 /c/kcasi
+$ dir
+Git			STS-bundle
+PostgreSQL	Workspace-STS-3.9.2
+spring-tool-suite-3.9.2.RELEASE-e4.7.2-win32-x86_64.zip
+
+Gamer@HOME MINGW64 /c/kcasi
+$ cd C:/Users/Gamer/@Develop
+
+Gamer@HOME MINGW64 ~/@Develop (master)
+$ cd c:\kcasi
+
+Gamer@HOME MINGW64 /c/kcasi
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+Gamer@HOME MINGW64 /c/kcasi
+$ cd C:/Users/Gamer/@Develop
+
+Gamer@HOME MINGW64 ~/@Develop (master)
+$ COPY C:/Kcasi/Workspace-STS-3.9.2/Aulas C:/Users/Gamer/WDevelop/JavaRest
+bash: COPY: command not found
+
+Gamer@HOME MINGW64 ~/@Develop (master)
+$ pwd
+/c/Users/Gamer/@Develop
+
+Gamer@HOME MINGW64 ~/@Develop (master)
+$ cp C:/Kcasi/Workspace-STS-3.9.2/Aulas/ ./JavaRest/
+cp: -r not specified; omitting directory 'C:/Kcasi/Workspace-STS-3.9.2/Aulas/'
+
+Gamer@HOME MINGW64 ~/@Develop (master)
+$ cp C:/Kcasi/Workspace-STS-3.9.2/Aulas/ C:/Users/Gamer/WDevelop/JavaRest/
+cp: -r not specified; omitting directory 'C:/Kcasi/Workspace-STS-3.9.2/Aulas/'
+
+Gamer@HOME MINGW64 ~/@Develop (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        JavaRest/
+        Postgres/
+        apachehttpd.exe
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Gamer@HOME MINGW64 ~/@Develop (master)
+$ git add .
+warning: LF will be replaced by CRLF in JavaRest/Aulas/.gitignore.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in JavaRest/Aulas/.mvn/wrapper/maven-wrappe
+r.properties.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in JavaRest/Aulas/mvnw.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in JavaRest/Aulas/mvnw.cmd.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in JavaRest/Aulas/pom.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in JavaRest/Aulas/src/main/java/com/example
+/aula/AulasApplication.java.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in JavaRest/Aulas/src/test/java/com/example
+/aula/AulasApplicationTests.java.
+The file will have its original line endings in your working directory.
+
+Gamer@HOME MINGW64 ~/@Develop (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   JavaRest/Aulas/.gitignore
+        new file:   JavaRest/Aulas/.mvn/wrapper/maven-wrapper.jar
+        new file:   JavaRest/Aulas/.mvn/wrapper/maven-wrapper.properties
+        new file:   JavaRest/Aulas/mvnw
+        new file:   JavaRest/Aulas/mvnw.cmd
+        new file:   JavaRest/Aulas/pom.xml
+        new file:   JavaRest/Aulas/src/main/java/com/example/aula/AulaRepository
+.java
+        new file:   JavaRest/Aulas/src/main/java/com/example/aula/AulasApplicati
+on.java
+        new file:   JavaRest/Aulas/src/main/java/com/example/aula/Matter.java
+        new file:   JavaRest/Aulas/src/main/java/com/example/aula/Student.java
+        new file:   JavaRest/Aulas/src/main/resources/application.properties
+        new file:   JavaRest/Aulas/src/test/java/com/example/aula/AulasApplicati
+onTests.java
+        new file:   Postgres/ScriptTblAluno.txt
+        new file:   Postgres/ScriptTblMateria.txt
+        new file:   apachehttpd.exe
+
+
+Gamer@HOME MINGW64 ~/@Develop (master)
+$ commit
+bash: commit: command not found
+
+Gamer@HOME MINGW64 ~/@Develop (master)
+$ git commit
+[master bc29b6c] Primeiro commit referente ao projeto rest
+ 15 files changed, 693 insertions(+)
+ create mode 100644 JavaRest/Aulas/.gitignore
+ create mode 100644 JavaRest/Aulas/.mvn/wrapper/maven-wrapper.jar
+ create mode 100644 JavaRest/Aulas/.mvn/wrapper/maven-wrapper.properties
+ create mode 100644 JavaRest/Aulas/mvnw
+ create mode 100644 JavaRest/Aulas/mvnw.cmd
+ create mode 100644 JavaRest/Aulas/pom.xml
+ create mode 100644 JavaRest/Aulas/src/main/java/com/example/aula/AulaRepository
+.java
+ create mode 100644 JavaRest/Aulas/src/main/java/com/example/aula/AulasApplicati
+on.java
+ create mode 100644 JavaRest/Aulas/src/main/java/com/example/aula/Matter.java
+ create mode 100644 JavaRest/Aulas/src/main/java/com/example/aula/Student.java
+ create mode 100644 JavaRest/Aulas/src/main/resources/application.properties
+ create mode 100644 JavaRest/Aulas/src/test/java/com/example/aula/AulasApplicati
+onTests.java
+ create mode 100644 Postgres/ScriptTblAluno.txt
+ create mode 100644 Postgres/ScriptTblMateria.txt
+ create mode 100644 apachehttpd.exe
+
+Gamer@HOME MINGW64 ~/@Develop (master)
+$ git push https://github.com/kcasi/-Develop master -m "Inclusão do primeiro pac
+ote rest sem erros"
+error: unknown switch `m'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --recurse-submodules[=<check|on-demand|no>]
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=<yes|no|if-asked>]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+Gamer@HOME MINGW64 ~/@Develop (master)
+$ git push https://github.com/kcasi/-Develop master
+Counting objects: 34, done.
+Delta compression using up to 16 threads.
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (34/34), 35.26 MiB | 424.00 KiB/s, done.
+Total 34 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/kcasi/-Develop
+   cc04321..bc29b6c  master -> master
+
+Gamer@HOME MINGW64 ~/@Develop (master)
+$ exit
+logout

@@ -1,0 +1,17 @@
+SELECT a."Matricula", a."Nome", m."Materia", m."Professor", c."Sala"
+	FROM "tblAluno" a
+    INNER JOIN "tblAula" c
+    ON a."Matricula" = c."MatriculaAluno"
+    INNER JOIN "tblMateria" m
+    ON c."IdMateria" = m."Id"
+    ;
+
+SELECT a."Matricula", a."Nome", m."Materia", m."Professor", c."Sala"
+	FROM "tblAluno" a
+    INNER JOIN "tblAula" c
+    ON a."Matricula" = c."MatriculaAluno"
+    INNER JOIN "tblMateria" m
+    ON c."IdMateria" = m."Id"
+    WHERE A."Matricula" = '18010000'
+    ORDER BY m."Materia"
+    ;
