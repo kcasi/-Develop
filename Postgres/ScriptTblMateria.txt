@@ -1,0 +1,22 @@
+CREATE TABLE public."tblMateria"
+(
+    "Id" serial NOT NULL,
+    "Materia" character varying(30) NOT NULL,
+    "Professor" character varying(100),
+    CONSTRAINT "tblMateria_pkey" PRIMARY KEY ("Id")
+)
+WITH (
+    OIDS = FALSE
+);
+
+ALTER TABLE public."tblMateria"
+    OWNER to postgres;
+
+SELECT * FROM public."tblMateria"
+ORDER BY "Id" ASC LIMIT 100
+
+INSERT INTO public."tblMateria"(
+	"Materia", "Professor")
+	VALUES ( 'Test', 'Testando');
+COMMIT
+

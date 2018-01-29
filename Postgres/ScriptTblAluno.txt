@@ -1,0 +1,37 @@
+-- DROP TABLE public."tblAluno";
+
+CREATE TABLE public."tblAluno"
+(
+    "Matricula" numeric NOT NULL,
+    "Nome" character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    "Telefone" character varying(11) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT "tblAluno_pkey" PRIMARY KEY ("Matricula")
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."tblAluno"
+    OWNER to postgres;
+COMMENT ON TABLE public."tblAluno"
+    IS 'Tabela de Alunos ';
+
+ALTER TABLE public."tblAluno"
+    ADD COLUMN "Nome" character varying(100) NOT NULL;
+
+ALTER TABLE public."tblAluno"
+    ADD COLUMN "Telefone" character varying(11) NOT NULL;
+
+
+SELECT * FROM public."tblAluno"
+ORDER BY "Matricula" ASC LIMIT 100
+
+INSERT INTO public."tblAluno"(
+	"Matricula", "Nome", "Telefone")
+	VALUES (18012345, 'Mariazinha', '11998877665');
+COMMIT
+
+UPDATE public."tblAluno"
+	SET "Matricula"=?, "Nome"=?, "Telefone"=?
+	WHERE <condition>;
